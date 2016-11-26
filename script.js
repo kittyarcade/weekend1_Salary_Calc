@@ -7,11 +7,11 @@ var employees= [];
 var newEmp = function(firstName, lastName, idNum, jobTitle, annSal){
 
   var emp = {
-    firstName: firstName,
-    lastName: lastName,
-    idNum: idNum,
-    jobTitle: jobTitle,
-    annSal: annSal
+    first: document.getElementById('firstName').value,
+    last: document.getElementById('lastName').value,
+    id: document.getElementById('idNum').value,
+    title: document.getElementById('jobTitle').value,
+    salary: document.getElementById('annSal').value,
   };
   employees.push(emp);
 };
