@@ -20,4 +20,12 @@ document.getElementById('lastName').value = '';
 document.getElementById('idNum').value = '';
 document.getElementById('jobTitle').value = '';
 document.getElementById('annSal').value = '';
+
+//appending info to DOM
+document.getElementById('outputFirst').innerHTML += firstName;
+document.getElementById('outputLast').innerHTML += lastName;
+document.getElementById('outputId').innerHTML += idNum;
+document.getElementById('outputJob').innerHTML += jobTitle;
+document.getElementById('outputSal').innerHTML += annSal;
+
 };
