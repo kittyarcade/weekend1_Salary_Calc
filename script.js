@@ -22,10 +22,24 @@ document.getElementById('jobTitle').value = '';
 document.getElementById('annSal').value = '';
 
 //appending info to DOM
-document.getElementById('outputFirst').innerHTML += firstName;
-document.getElementById('outputLast').innerHTML += lastName;
-document.getElementById('outputId').innerHTML += idNum;
-document.getElementById('outputJob').innerHTML += jobTitle;
-document.getElementById('outputSal').innerHTML += annSal;
+var text = '';
+
+for(i = 0; i < employees.length; i++) {
+  text += employees[i] + '<br>';
+document.getElementById('outputP').innerHTML = text;
+
+}
 
 };
+
+//calculating total monthly salary
+var monthlySalaryTotal = function () {
+  var salariesTotal = 0;
+  for (var i = 0; i < employees.length; i++){
+  salariesTotal += Number(employees[i][4]);
+}
+  return salariesTotal/12;
+
+};
+
+//get monthly salary total to appear on DOM
