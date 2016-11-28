@@ -25,7 +25,7 @@ document.getElementById('annSal').value = '';
 var text = '';
 
 for(i = 0; i < employees.length; i++) {
-  text += employees[i] + '<br>';
+  text += employees[i][0] + " " + employees[i][1] + ' ' + employees[i][2] + " " + employees[i][3] + " " + employees[i][4] + '<br>';
 document.getElementById('outputP').innerHTML = text;
 
 }
