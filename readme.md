@@ -20,4 +20,4 @@
 
 [X] clear input fields
 
-[] function that adds up the salaries of the employees
+[X] function that adds up the salaries of the employees

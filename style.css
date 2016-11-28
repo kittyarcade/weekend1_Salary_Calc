@@ -1,0 +1,29 @@
+body {
+  font-family: sans-serif;
+  background-color: #5eb0b8;
+  position: relative;
+  text-align: center;
+
+
+
+}
+
+.results {
+  background-color: rgb(200, 200, 200);
+  border-radius: 5px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 15px;
+  width: 50%;
+
+}
+
+.container {
+  background-color: rgb(200, 200, 200);
+  border-radius: 5px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 15px;
+  width: 50%;
+
+}

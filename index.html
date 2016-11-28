@@ -3,9 +3,11 @@
 <head>
 <title>Salary Calculator</title>
 <meta charset="utf-8">
+<link rel="stylesheet" href='style.css'>
 <script src="script.js" charset="utf-8"></script>
 </head>
   <body>
+<div class = 'container'>
   <h1>Employee Salary Calculator</h1>
     <input type="text" id='firstName' placeholder="Employee First Name">
     <input type="text" id='lastName' placeholder="Employee Last Name">
@@ -13,12 +15,13 @@
     <input type="text" id="jobTitle" placeholder="Job Title">
     <input type='text' id="annSal" placeholder="Annual Salary"><br>
     <br><button onclick="getInfo()">Submit</button>
-<div>
-  <h2>Employee Information</h2>
-<p id = 'outputP'></p>
-</div>
-<h2>Monthly Salary Total</h2>
+  </div>
+<div class = 'results'>
+  <h3>Employee Information</h3>
+<p id = 'outputP'></p><br/>
+<h3>Monthly Salary Total</h3>
 <button onclick='monthlySalaryTotal()'>Get Total</button>
-<p id ="outputSal"></p>
+<p>Total Monthly Salary: <p><p id ="outputSal"></p>
+</div>
   </body>
   </html>
