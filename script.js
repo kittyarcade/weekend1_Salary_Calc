@@ -38,8 +38,11 @@ var monthlySalaryTotal = function () {
   for (var i = 0; i < employees.length; i++){
   salariesTotal += Number(employees[i][4]);
 }
-  return salariesTotal/12;
+//get monthly salary total to appear on DOM
+  document.getElementById('outputSal').innerHTML = salariesTotal/12;
 
 };
+
+
 
 //get monthly salary total to appear on DOM
